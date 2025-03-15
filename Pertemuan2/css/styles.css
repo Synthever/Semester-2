@@ -104,6 +104,16 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  scrollbar-width: none;
+}
+body {
+  -ms-overflow-style: none;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
