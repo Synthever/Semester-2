@@ -9,6 +9,10 @@
 <body>
 
     <style>
+        table {
+            width: 300px;
+            height: 300px;
+        }
         td {
             width: 50px;
             height: 50px;
@@ -23,35 +27,39 @@
             display: block;
             margin: 0 auto;
         }
+        .rounded{
+            border-radius: 50%;
+            animation: spin 10s linear infinite;
+        }
     </style>
 
     
     <table>
         <tr>
-            <td><img src="assets/gambar1.jpg" style="width: 50px; height: 50px;"></td>
-            <td colspan="2" rowspan="2"><img src="assets/gambar2.jpg" style="width: 100px; height: 100px;"></td>
-            <td><img src="assets/gambar3.jpg" style="width: 50px; height: 50px;"></td>
-            <td><img src="assets/gambar4.jpg" style="width: 50px; height: 50px;"></td>
+            <td><img class="rounded" src="assets/gambar1.jpg" style="width: 50px; height: 50px;"></td>
+            <td colspan="2" rowspan="2"><img class="rounded" src="assets/gambar2.jpg" style="width: 100px; height: 100px;"></td>
+            <td><img class="rounded" src="assets/gambar3.jpg" style="width: 50px; height: 50px;"></td>
+            <td><img class="rounded" src="assets/gambar4.jpg" style="width: 50px; height: 50px;"></td>
         </tr>
         <tr>
-            <td><img src="assets/gambar1.jpg" style="width: 50px; height: 50px;"></td>
-            <td colspan="2" rowspan="2">9</td>
+            <td><img class="rounded" src="assets/gambar5.jpg" style="width: 50px; height: 50px;"></td>
+            <td colspan="2" rowspan="2"><img class="rounded" src="assets/gambar1.jpg" style="width: 100px; height: 100px;"></td>
         </tr>
         <tr>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
+            <td><img class="rounded" src="assets/gambar2.jpg" style="width: 50px; height: 50px;"></td>
+            <td><img class="rounded" src="assets/gambar3.jpg" style="width: 50px; height: 50px;"></td>
+            <td><img class="rounded" src="assets/gambar4.jpg" style="width: 50px; height: 50px;"></td>
         </tr>
         <tr>
-            <td colspan="2" rowspan="2">16</td>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
+            <td colspan="2" rowspan="2"><img class="rounded" src="assets/gambar5.jpg" style="width: 100px; height: 100px;"></td>
+            <td><img class="rounded" src="assets/gambar1.jpg" style="width: 50px; height: 50px;"></td>
+            <td><img class="rounded" src="assets/gambar2.jpg" style="width: 50px; height: 50px;"></td>
+            <td><img class="rounded" src="assets/gambar3.jpg" style="width: 50px; height: 50px;"></td>
         </tr>
         <tr>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
+            <td><img class="rounded" src="assets/gambar4.jpg" style="width: 50px; height: 50px;"></td>
+            <td><img class="rounded" src="assets/gambar5.jpg" style="width: 50px; height: 50px;"></td>
+            <td><img class="rounded" src="assets/gambar1.jpg" style="width: 50px; height: 50px;"></td>
         </tr>
     </table>
 
