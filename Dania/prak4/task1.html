@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Semangka</title>
+    <link rel="icon" href="image.png"/>
+    <style>
+        body{
+            background-color: #bdbdbd;
+            font-family: Helvetica;
+        }
+        nav{
+            background-color: #d1d1d1;
+            padding: 5px;
+            text-align: right;
+            top: 0;
+            overflow: auto;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            margin-right: 20px;
+            width: 10px;
+        }
+        a{
+            text-decoration: none;
+            padding: 20px;
+            color: #1d1c1a;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 30px;
+        }
+        a:hover{
+            color: #6c09a5;
+            background-color: #bdbdbd;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        img{
+            height: 50px;
+            float: left;
+        }
+        .header {
+            padding: 50px;
+            background-color: #933e9e;
+        }
+        .table{
+            width: 100%;
+        }
+        .td-kiri{
+            width: 30%;
+            height: 500px;
+            background-color: #00a88f;
+            color: white;
+            padding-left: 20px;
+        }
+        .td-kanan{
+            width: 70%;
+            height: 500px;
+            background-color: #00a88f;
+            color: white;
+            padding: 20px;
+        }
+        .header img{
+            margin: 0;
+            padding: 0;
+            height: 200px;
+            float: right;
+            transform: rotate(10deg);
+            border: 5px solid white;
+        }
+        .header h1, .header i{
+            color: #ecf0f1;
+        }
+        .menu{
+            margin-top: 20px;
+        }
+        .menu ul{
+            padding-left: 15px;
+        }
+        .menu ul li{
+            display: block;
+            padding: 5px;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .gallery img{
+            width: 100%;
+            height: auto;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="amikom.png">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Portofolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="header">
+        <img src="watermelon.png">
+        <h1>Belajar selector CSS</h1>
+        <i>UTS Ganjil 2022/2023 akan dilaksanakan antara tanggal 14 s/d 26 November 2022 Secara Full Offline</i>
+    </section>
+
+    <section>
+        <article>
+            <table class="table">
+                <tr>
+                    <td class="td-kiri">
+                        <div class="menu">
+                            <ul>
+                                <li>Menu 1
+                                    <ul>
+                                        <li>Sub Menu 1</li>
+                                        <li>Sub Menu 1</li>
+                                        <li>Sub Menu 1</li>
+                                    </ul>
+                                </li>
+                                <li>Menu 2</li>
+                                <li>Menu 3
+                                    <ul>
+                                        <li>Sub Menu 3</li>
+                                        <li>Sub Menu 3</li>
+                                        <li>Sub Menu 3</li>
+                                    </ul>
+                                </li>
+                                <li>Menu 4</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="td-kanan">
+                        <p>Disini kita akan buat galery</p>
+                        <div class="gallery">
+                            <img src="watermelon.png" alt="">
+                            <img src="ylwatermelon.png" alt="">
+                            <img src="img3.png" alt="">
+                            <img src="img4.png" alt="">
+                            <img src="img1.png" alt="">
+                            <img src="img2.png" alt="">
+                            <img src="img3.png" alt="">
+                            <img src="img4.png" alt="">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </article>
+    </section>
+</body>
+</html>
