@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <link rel="icon" href="assets/penguin.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <img src="assets/penguin.png" alt="Penguin" class="img-fluid mb-4" width="300" height="300">
+                            <h3 class="mb-4">Formulir Pendaftaran</h3>
+                        </div>
+                        <form action="/action_page.php" class="needs-validation" novalidate>
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <!-- Nama dan NIM -->
+                                    <tr>
+                                        <td width="50%">
+                                            <label for="firstName" class="form-label">Nama</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="Masukkan Nama Anda" required>
+                                            <div class="invalid-feedback">
+                                                Masukkan nama Anda.
+                                            </div>
+                                        </td>
+                                        <td width="50%">
+                                            <label for="nim" class="form-label">NIM</label>
+                                            <input type="text" class="form-control" id="nim" placeholder="Masukkan NIM Anda" required pattern="\d{2}\.\d{2}\.\d{4}">
+                                            <div class="invalid-feedback">
+                                                Masukkan NIM Anda dengan format 24.01.5115.
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Jenis Kelamin -->
+                                    <tr>
+                                        <td colspan="2">
+                                            <label class="form-label d-block">Jenis Kelamin</label>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="jenisKelamin" id="laki" value="Laki-laki" required>
+                                                <label class="form-check-label" for="laki">
+                                                    <i class="fas fa-mars me-1 text-primary"></i> Laki-laki
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="jenisKelamin" id="perempuan" value="Perempuan" required>
+                                                <label class="form-check-label" for="perempuan">
+                                                    <i class="fas fa-venus me-1 text-danger"></i> Perempuan
+                                                </label>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Pilih jenis kelamin Anda.
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Program Studi dan Kelas -->
+                                    <tr>
+                                        <td>
+                                            <label for="programStudi" class="form-label">Program Studi</label>
+                                            <select class="form-select" id="programStudi" name="programStudi" required onchange="updateKelasOptions()">
+                                                <option value="" disabled selected>Pilih Program Studi</option>
+                                                <option value="D3TI">D3 Teknik Informatika</option>
+                                                <option value="D3MI">D3 Management Informatika</option>
+                                                <option value="S1IF">S1 Informatika</option>
+                                                <option value="S1SI">S1 Sistem Informasi</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Pilih Program Studi Anda.
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <label for="kelas" class="form-label">Kelas</label>
+                                            <select class="form-select" id="kelas" name="kelas" required disabled>
+                                                <option value="" disabled selected>Pilih Kelas</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Pilih Kelas Anda.
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- IPK dan Password -->
+                                    <tr>
+                                        <td>
+                                            <label for="ipk" class="form-label">IPK</label>
+                                            <input type="number" class="form-control" id="ipk" name="ipk" placeholder="Masukkan IPK Anda" required min="0" max="4.0" step="0.01">
+                                            <div class="invalid-feedback">
+                                                Masukkan IPK yang valid (0.00 - 4.00).
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Password Anda" required minlength="8">
+                                            <div class="invalid-feedback">
+                                                Password harus memiliki minimal 8 karakter.
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Login link -->
+                                    <tr>
+                                        <td colspan="2" class="text-center">
+                                            <p>Sudah punya akun? <a href="/Rey/Pertemuan5/login.html" class="text-decoration-none">Login</a></p>
+                                        </td>
+                                    </tr>
+                                    
+                                    <!-- Buttons -->
+                                    <tr>
+                                        <td colspan="2" class="text-center">
+                                            <button type="reset" class="btn btn-outline-secondary me-2">Reset</button>
+                                            <button type="submit" class="btn btn-primary">Daftar</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to update kelas options based on program studi selection
+        function updateKelasOptions() {
+            const programStudi = document.getElementById('programStudi').value;
+            const kelasSelect = document.getElementById('kelas');
+            
+            // Clear previous options
+            kelasSelect.innerHTML = '<option value="" disabled selected>Pilih Kelas</option>';
+            
+            if (programStudi) {
+                kelasSelect.disabled = false;
+                
+                // Add options based on selected program
+                if (programStudi === 'D3TI') {
+                    addOption(kelasSelect, 'D3TI01', 'D3TI01');
+                    addOption(kelasSelect, 'D3TI02', 'D3TI02');
+                } else if (programStudi === 'D3MI') {
+                    addOption(kelasSelect, 'D3MI01', 'D3MI01');
+                    addOption(kelasSelect, 'D3MI02', 'D3MI02');
+                } else if (programStudi === 'S1IF') {
+                    addOption(kelasSelect, 'S1IF01', 'S1IF01');
+                    addOption(kelasSelect, 'S1IF02', 'S1IF02');
+                } else if (programStudi === 'S1SI') {
+                    addOption(kelasSelect, 'S1SI01', 'S1SI01');
+                    addOption(kelasSelect, 'S1SI02', 'S1SI02');
+                }
+            } else {
+                kelasSelect.disabled = true;
+            }
+        }
+        
+        // Helper function to add options to select element
+        function addOption(selectElement, value, text) {
+            const option = document.createElement('option');
+            option.value = value;
+            option.textContent = text;
+            selectElement.appendChild(option);
+        }
+        
+        // Form validation script
+        (function () {
+            'use strict'
+            
+            // Fetch all forms we want to apply validation to
+            const forms = document.querySelectorAll('.needs-validation')
+            
+            // Loop and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
+</body>
+
+</html>
