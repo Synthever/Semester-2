@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULIR REGISTER</title>
+    <link rel="icon" href="assets/amikom.png"/>
+    <style>
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            margin: 20px;
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>FORMULIR REGISTER</h2>
+    <p>Inputkan data diri anda!</p>
+
+    <form action="register.php">
+        <table>
+            <tr>
+                <td><label for="fname">Nama:</label></td>
+                <td><input type="text" id="fname" name="fname" required></td><br>
+            </tr>
+            <tr>
+                <td><label for="nim">NIM:</label></td>
+                <td><input type="text" id="nim" name="nim" required></td>
+            </tr>
+            <tr>
+                <td><label for="jk">Jenis Kelamin:</label></td>
+                <td>
+                    <input type="radio" id="laki" name="jk" value="Laki-laki" required>
+                    <label for="laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jk" value="Perempuan" required>
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="prodi">Program Studi:</label></td>
+                <td>
+                    <select id="prodi" name="prodi" required onchange="updateKelas()">
+                        <option value="">--Pilih Program Studi--</option>
+                        <option value="D3TI">D3 Teknik Informatika</option>
+                        <option value="D3MI">D3 Manajemen Informatika</option>
+                        <option value="S1SI">S1 Sistem Informasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="kelas">Kelas:</label></td>
+                <td>
+                    <select id="kelas" name="kelas" required>
+                        <option value="">--Pilih Kelas--</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ipk">IPK:</label></td>
+                <td><input type="number" id="ipk" name="ipk" step="0.01" min="0" max="4" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Register</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+    
+    <table style="margin-top: -500px; margin-right: 500px; float: right;">
+        <tr>
+            <td>
+                <img src="assets/amikom.png" alt="Logo AMIKOM">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<script>
+    function updateKelas() {
+        const prodi = document.getElementById("prodi").value;
+        const kelasSelect = document.getElementById("kelas");
+        kelasSelect.innerHTML = '<option value="">--Pilih Kelas--</option>';
+
+        if (prodi === "D3TI") {
+        const kelas = ["D3TI01", "D3TI02", "D3TI03"];
+        kelas.forEach(k => {
+            kelasSelect.add(new Option(k, k));
+        });
+        } else if (prodi === "D3MI") {
+        const kelas = ["D3MI01", "D3MI02", "D3MI03"];
+        kelas.forEach(k => {
+            kelasSelect.add(new Option(k, k));
+        });
+        } else if (prodi === "S1SI") {
+        const kelas = ["S1SI01", "S1SI02", "S1SI03"];
+        kelas.forEach(k => {
+            kelasSelect.add(new Option(k, k));
+        });
+        }
+    }
+    </script>
