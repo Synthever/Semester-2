@@ -60,4 +60,20 @@
             text-align: center;
             margin-bottom: 20px;
         }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .fotonya {
+            margin-top: 120px;
+            margin-left: 3%;
+            padding: 0;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
 
