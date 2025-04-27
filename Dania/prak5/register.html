@@ -19,15 +19,15 @@
         <form action="register.php">
             <table>
                 <tr>
-                    <td><label for="fname">Nama:</label></td>
+                    <td><label class="kiri" for="fname">Nama:</label></td>
                     <td><input type="text" id="fname" name="fname" required></td><br>
                 </tr>
                 <tr>
-                    <td><label for="nim">NIM:</label></td>
+                    <td><label class="kiri" for="nim">NIM:</label></td>
                     <td><input type="text" id="nim" name="nim" required></td>
                 </tr>
                 <tr>
-                    <td><label for="jk">Jenis Kelamin:</label></td>
+                    <td><label class="kiri" for="jk">Jenis Kelamin:</label></td>
                     <td>
                         <input type="radio" id="laki" name="jk" value="Laki-laki" required>
                         <label for="laki">Laki-laki</label>
@@ -36,11 +36,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="email">Email:</label></td>
+                    <td><label class="kiri" for="email">Email:</label></td>
                     <td><input type="email" id="email" name="email" required></td>
                 </tr>
                 <tr>
-                    <td><label for="prodi">Program Studi:</label></td>
+                    <td><label class="kiri" for="prodi">Program Studi:</label></td>
                     <td>
                         <select id="prodi" name="prodi" required onchange="updateKelas()">
                             <option value="">--Pilih Program Studi--</option>
@@ -51,7 +51,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="kelas">Kelas:</label></td>
+                    <td><label class="kiri" for="kelas">Kelas:</label></td>
                     <td>
                         <select id="kelas" name="kelas" required>
                             <option value="">--Pilih Kelas--</option>
@@ -59,7 +59,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="ipk">IPK:</label></td>
+                    <td><label class="kiri" for="ipk">IPK:</label></td>
                     <td><input type="number" id="ipk" name="ipk" step="0.01" min="0" max="4" required></td>
                 </tr>
                 <tr>

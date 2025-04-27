@@ -76,4 +76,9 @@
             height: 200px;
             position: absolute;
         }
+        .kiri {
+            text-align: left;
+            display: block;
+            margin-bottom: 5px;
+        }
 
