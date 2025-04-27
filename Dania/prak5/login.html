@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM LOGIN</title>
+    <link rel="icon" href="assets/amikom.png"/>
+    <style>
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        </style>
+</head>
+<body>
+    <h2>FORM LOGIN</h2>
+    <p>Silahkan login untuk melanjutkan!</p>
+
+    <form action="login.php">
+        <table>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td><br>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Login</button></td>
+            </tr>
+        </table>   
+    </form>
+    <p>Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+</body>
+</html>
