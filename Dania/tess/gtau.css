@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #1a0c2c;
+    color: white;
+}
+
+header {
+    background-color: #1a0c2c;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 80px;
+}
+
+main {
+    text-align: center;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    height: 450px;
+    text-align: left;
+}
+
+.login-title {
+    background-color: #f2b700;
+    margin-top: 7px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 93%;
+    padding: 13px;
+    margin-bottom: 25px;
+    margin-top: 7px;
+    background-color: #ffffcc;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 25px;
+    background-color: orange;
+    border: none;
+    color: black;
+    font-weight: lighter;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+.version {
+    margin-top: 15px;
+    color: gray;
+    font-size: 12px;
+}
+
+.form-check {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.form-check-input {
+    margin-top: 5px;
+}
+
+.form-check-label {
+    font-size: 15px;
+    color: #333;
+}
+.forgot-password {
+    text-align: right;
+    margin-top: 20px;
+}

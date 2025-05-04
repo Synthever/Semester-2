@@ -5,7 +5,7 @@
     <title>Presensi Kuliah - Universitas Amikom Yogyakarta</title>
     <base href="./">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/amikom.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <style type="text/css">
@@ -1888,560 +1888,56 @@
             border-radius: 1rem
         }
     </style>
-    <style>
-        @media (min-width: 576px) {
-            .height[_ngcontent-ng-c2652969710] {
-                min-height: 3rem
-            }
-        }
-
-        @media (min-width: 768px) {
-            .height[_ngcontent-ng-c2652969710] {
-                min-height: 8rem
-            }
-        }
-
-        @media (min-width: 992px) {
-            .height[_ngcontent-ng-c2652969710] {
-                min-height: 12rem
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .height[_ngcontent-ng-c2652969710] {
-                min-height: 15rem
-            }
-        }
-
-        @media (min-width: 1400px) {
-            .height[_ngcontent-ng-c2652969710] {
-                min-height: 22rem
-            }
-        }
-    </style>
-    <style>
-        .p-datatable {
-            position: relative
-        }
-
-        .p-datatable>.p-datatable-wrapper {
-            overflow: auto
-        }
-
-        .p-datatable-table {
-            border-spacing: 0px;
-            width: 100%
-        }
-
-        .p-datatable .p-sortable-column {
-            cursor: pointer;
-            -webkit-user-select: none;
-            user-select: none
-        }
-
-        .p-datatable .p-sortable-column .p-column-title,
-        .p-datatable .p-sortable-column .p-sortable-column-icon,
-        .p-datatable .p-sortable-column .p-sortable-column-badge {
-            vertical-align: middle
-        }
-
-        .p-datatable .p-sortable-column .p-icon-wrapper {
-            display: inline
-        }
-
-        .p-datatable .p-sortable-column .p-sortable-column-badge {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center
-        }
-
-        .p-datatable-hoverable-rows .p-selectable-row {
-            cursor: pointer
-        }
-
-        .p-datatable-scrollable>.p-datatable-wrapper {
-            position: relative
-        }
-
-        .p-datatable-scrollable-table>.p-datatable-thead {
-            position: sticky;
-            top: 0;
-            z-index: 1
-        }
-
-        .p-datatable-scrollable-table>.p-datatable-frozen-tbody {
-            position: sticky;
-            z-index: 1
-        }
-
-        .p-datatable-scrollable-table>.p-datatable-tfoot {
-            position: sticky;
-            bottom: 0;
-            z-index: 1
-        }
-
-        .p-datatable-scrollable .p-frozen-column {
-            position: sticky;
-            background: inherit
-        }
-
-        .p-datatable-scrollable th.p-frozen-column {
-            z-index: 1
-        }
-
-        .p-datatable-flex-scrollable {
-            display: flex;
-            flex-direction: column;
-            height: 100%
-        }
-
-        .p-datatable-flex-scrollable>.p-datatable-wrapper {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            height: 100%
-        }
-
-        .p-datatable-scrollable-table>.p-datatable-tbody>.p-rowgroup-header {
-            position: sticky;
-            z-index: 1
-        }
-
-        .p-datatable-resizable-table>.p-datatable-thead>tr>th,
-        .p-datatable-resizable-table>.p-datatable-tfoot>tr>td,
-        .p-datatable-resizable-table>.p-datatable-tbody>tr>td {
-            overflow: hidden;
-            white-space: nowrap
-        }
-
-        .p-datatable-resizable-table>.p-datatable-thead>tr>th.p-resizable-column:not(.p-frozen-column) {
-            background-clip: padding-box;
-            position: relative
-        }
-
-        .p-datatable-resizable-table-fit>.p-datatable-thead>tr>th.p-resizable-column:last-child .p-column-resizer {
-            display: none
-        }
-
-        .p-datatable .p-column-resizer {
-            display: block;
-            position: absolute !important;
-            top: 0;
-            right: 0;
-            margin: 0;
-            width: .5rem;
-            height: 100%;
-            padding: 0;
-            cursor: col-resize;
-            border: 1px solid transparent
-        }
-
-        .p-datatable .p-column-resizer-helper {
-            width: 1px;
-            position: absolute;
-            z-index: 10;
-            display: none
-        }
-
-        .p-datatable .p-row-editor-init,
-        .p-datatable .p-row-editor-save,
-        .p-datatable .p-row-editor-cancel,
-        .p-datatable .p-row-toggler {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            position: relative
-        }
-
-        .p-datatable-reorder-indicator-up,
-        .p-datatable-reorder-indicator-down {
-            position: absolute
-        }
-
-        .p-datatable-reorderablerow-handle,
-        [pReorderableColumn] {
-            cursor: move
-        }
-
-        .p-datatable .p-datatable-loading-overlay {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2
-        }
-
-        .p-column-filter-row {
-            display: flex;
-            align-items: center;
-            width: 100%
-        }
-
-        .p-column-filter-menu {
-            display: inline-flex
-        }
-
-        .p-column-filter-row p-columnfilterformelement {
-            flex: 1 1 auto;
-            width: 1%
-        }
-
-        .p-column-filter-menu-button,
-        .p-column-filter-clear-button {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            text-decoration: none;
-            overflow: hidden;
-            position: relative
-        }
-
-        .p-column-filter-overlay {
-            position: absolute;
-            top: 0;
-            left: 0
-        }
-
-        .p-column-filter-row-items {
-            margin: 0;
-            padding: 0;
-            list-style: none
-        }
-
-        .p-column-filter-row-item {
-            cursor: pointer
-        }
-
-        .p-column-filter-add-button,
-        .p-column-filter-remove-button {
-            justify-content: center
-        }
-
-        .p-column-filter-add-button .p-button-label,
-        .p-column-filter-remove-button .p-button-label {
-            flex-grow: 0
-        }
-
-        .p-column-filter-buttonbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between
-        }
-
-        .p-column-filter-buttonbar .p-button {
-            width: auto
-        }
-
-        .p-datatable-tbody>tr>td>.p-column-title {
-            display: none
-        }
-
-        .p-datatable-scroller-spacer {
-            display: flex
-        }
-
-        .p-datatable .p-scroller .p-scroller-loading {
-            transform: none !important;
-            min-height: 0;
-            position: sticky;
-            top: 0;
-            left: 0
-        }
-    </style>
-    <style>
-        .p-dialog-mask {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            pointer-events: none
-        }
-
-        .p-dialog-mask.p-component-overlay {
-            pointer-events: auto
-        }
-
-        .p-dialog {
-            display: flex;
-            flex-direction: column;
-            pointer-events: auto;
-            max-height: 90%;
-            transform: scale(1);
-            position: relative
-        }
-
-        .p-dialog-content {
-            overflow-y: auto;
-            flex-grow: 1
-        }
-
-        .p-dialog-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-shrink: 0
-        }
-
-        .p-dialog-draggable .p-dialog-header {
-            cursor: move
-        }
-
-        .p-dialog-footer {
-            flex-shrink: 0
-        }
-
-        .p-dialog .p-dialog-header-icons {
-            display: flex;
-            align-items: center
-        }
-
-        .p-dialog .p-dialog-header-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            position: relative
-        }
-
-        .p-fluid .p-dialog-footer .p-button {
-            width: auto
-        }
-
-        .p-dialog-top .p-dialog,
-        .p-dialog-bottom .p-dialog,
-        .p-dialog-left .p-dialog,
-        .p-dialog-right .p-dialog,
-        .p-dialog-top-left .p-dialog,
-        .p-dialog-top-right .p-dialog,
-        .p-dialog-bottom-left .p-dialog,
-        .p-dialog-bottom-right .p-dialog {
-            margin: .75rem;
-            transform: translateZ(0)
-        }
-
-        .p-dialog-maximized {
-            transition: none;
-            transform: none;
-            width: 100vw !important;
-            height: 100vh !important;
-            top: 0 !important;
-            left: 0 !important;
-            max-height: 100%;
-            height: 100%
-        }
-
-        .p-dialog-maximized .p-dialog-content {
-            flex-grow: 1
-        }
-
-        .p-dialog-left {
-            justify-content: flex-start
-        }
-
-        .p-dialog-right {
-            justify-content: flex-end
-        }
-
-        .p-dialog-top {
-            align-items: flex-start
-        }
-
-        .p-dialog-top-left {
-            justify-content: flex-start;
-            align-items: flex-start
-        }
-
-        .p-dialog-top-right {
-            justify-content: flex-end;
-            align-items: flex-start
-        }
-
-        .p-dialog-bottom {
-            align-items: flex-end
-        }
-
-        .p-dialog-bottom-left {
-            justify-content: flex-start;
-            align-items: flex-end
-        }
-
-        .p-dialog-bottom-right {
-            justify-content: flex-end;
-            align-items: flex-end
-        }
-
-        .p-dialog .p-resizable-handle {
-            position: absolute;
-            font-size: .1px;
-            display: block;
-            cursor: se-resize;
-            width: 12px;
-            height: 12px;
-            right: 1px;
-            bottom: 1px
-        }
-
-        .p-confirm-dialog .p-dialog-content {
-            display: flex;
-            align-items: center
-        }
-    </style>
 </head>
 
 <body style="font-family: 'Lato', sans-serif !important" class="bg-[#140330]">
     <app-root _nghost-ng-c1933515739="" ng-version="16.2.12"><router-outlet
-            _ngcontent-ng-c1933515739=""></router-outlet><app-matakuliah _nghost-ng-c2652969710=""
-            class="ng-star-inserted">
-            <div _ngcontent-ng-c2652969710=""
-                class="container mx-auto min-h-screen flex flex-col gap-7 justify-between">
-                <div _ngcontent-ng-c2652969710="" class="flex flex-col gap-7 pt-7 flex-1">
-                    <div _ngcontent-ng-c2652969710=""
-                        class="px-7 py-3 rounded-2xl shadow-sm bg-gradient-to-br from-indigo-50 via-white to-indigo-100">
-                        <div _ngcontent-ng-c2652969710="" class="flex flex-row gap-3 items-center"><i
-                                _ngcontent-ng-c2652969710="" class="fa-solid fa-user-tie text-5xl"></i>
-                            <div _ngcontent-ng-c2652969710="" class="flex flex-col"><span _ngcontent-ng-c2652969710=""
-                                    class="uppercase underline text-lg">190302465</span><span
-                                    _ngcontent-ng-c2652969710="" class="text-xl font-semibold tracking-wide">M. Akbar
-                                    Maulana, M.Kom</span></div>
-                        </div>
-                    </div>
-                    <div _ngcontent-ng-c2652969710="" class="grid grid-cols-5 gap-7 flex-1">
-                        <div _ngcontent-ng-c2652969710="" class="col-span-5 lg:col-span-3 card card-compact">
-                            <div _ngcontent-ng-c2652969710="" class="card-body">
-                                <div _ngcontent-ng-c2652969710="" class="card-title">Pilih Matakuliah</div><p-table
-                                    _ngcontent-ng-c2652969710="" styleclass="p-datatable-striped" selectionmode="single"
-                                    datakey="kuliah_id" responsivelayout="scroll" class="p-element w-full card-body">
-                                    <div id="pn_id_1"
-                                        class="p-datatable-striped p-datatable p-component p-datatable-hoverable-rows">
-                                        <!---->
-                                        <div class="p-datatable-header ng-star-inserted">
-                                            <div _ngcontent-ng-c2652969710=""
-                                                class="flex flex-col lg:flex-row lg:justify-between gap-2 lg:gap-0 ng-star-inserted">
-                                                <span _ngcontent-ng-c2652969710="" class="p-input-icon-left"><i
-                                                        _ngcontent-ng-c2652969710=""
-                                                        class="fa fa-search ng-star-inserted"></i><!----><!----><input
-                                                        _ngcontent-ng-c2652969710="" pinputtext="" type="text"
-                                                        placeholder="Cari Matakuliah"
-                                                        class="p-inputtext p-component p-element w-full"></span><button
-                                                    _ngcontent-ng-c2652969710="" type="button"
-                                                    class="btn btn-primary w-fit"><i _ngcontent-ng-c2652969710=""
-                                                        class="fas fa-download"></i>Download data mahasiswa</button>
-                                            </div><!---->
-                                        </div><!----><!---->
-                                        <div class="p-datatable-wrapper"><!---->
-                                            <table role="table" id="pn_id_1-table"
-                                                class="p-datatable-table ng-star-inserted"><!---->
-                                                <thead class="p-datatable-thead">
-                                                    <tr _ngcontent-ng-c2652969710="" class="ng-star-inserted">
-                                                        <th _ngcontent-ng-c2652969710="">NO</th>
-                                                        <th _ngcontent-ng-c2652969710="">MATAKULIAH</th>
-                                                        <th _ngcontent-ng-c2652969710="">PRODI</th>
-                                                    </tr><!---->
-                                                </thead><!---->
-                                                <tbody class="p-element p-datatable-tbody"><!---->
-                                                    <tr _ngcontent-ng-c2652969710=""
-                                                        class="p-element p-selectable-row ng-star-inserted p-highlight"
-                                                        tabindex="0">
-                                                        <td _ngcontent-ng-c2652969710="">1</td>
-                                                        <td _ngcontent-ng-c2652969710="" class="truncate">MULTIMEDIA
-                                                        </td>
-                                                        <td _ngcontent-ng-c2652969710="" class="truncate">S1 - Bachelor
-                                                            Communication Science</td>
-                                                    </tr><!----><!----><!----><!----><!----><!---->
-                                                    <tr _ngcontent-ng-c2652969710=""
-                                                        class="p-element p-selectable-row ng-star-inserted"
-                                                        tabindex="0">
-                                                        <td _ngcontent-ng-c2652969710="">2</td>
-                                                        <td _ngcontent-ng-c2652969710="" class="truncate">DIGITAL
-                                                            BUSINESS</td>
-                                                        <td _ngcontent-ng-c2652969710="" class="truncate">S1 - Ilmu
-                                                            Komunikasi</td>
-                                                    </tr>
-                                                    <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-                                                </tbody><!----><!---->
-                                            </table><!----><!----><!----><!---->
-                                        </div><!----><!----><!----><!----><!---->
-                                    </div>
-                                </p-table>
-                            </div>
-                        </div>
-                        <div _ngcontent-ng-c2652969710="" class="col-span-5 lg:col-span-2 card card-compact">
-                            <div _ngcontent-ng-c2652969710="" class="card-body">
-                                <div _ngcontent-ng-c2652969710="" class="card-title">Pilih Kelas</div><!----><p-table
-                                    _ngcontent-ng-c2652969710="" styleclass="p-datatable-striped" selectionmode="single"
-                                    datakey="id" class="p-element w-full card-body ng-star-inserted">
-                                    <div id="pn_id_3"
-                                        class="p-datatable-striped p-datatable p-component p-datatable-hoverable-rows">
-                                        <!---->
-                                        <div class="p-datatable-header ng-star-inserted">
-                                            <div _ngcontent-ng-c2652969710=""
-                                                class="text-center font-normal ng-star-inserted"> Daftar Kelas
-                                                Matakuliah <br _ngcontent-ng-c2652969710=""><span
-                                                    _ngcontent-ng-c2652969710=""
-                                                    class="font-semibold tracking-wide uppercase">"MULTIMEDIA"</span>
-                                            </div><!---->
-                                        </div><!----><!---->
-                                        <div class="p-datatable-wrapper"><!---->
-                                            <table role="table" id="pn_id_3-table"
-                                                class="p-datatable-table ng-star-inserted"><!---->
-                                                <thead class="p-datatable-thead">
-                                                    <tr _ngcontent-ng-c2652969710="" class="ng-star-inserted">
-                                                        <th _ngcontent-ng-c2652969710="">KELAS</th>
-                                                    </tr><!---->
-                                                </thead><!---->
-                                                <tbody class="p-element p-datatable-tbody"><!---->
-                                                    <tr _ngcontent-ng-c2652969710=""
-                                                        class="p-element p-selectable-row ng-star-inserted"
-                                                        tabindex="0">
-                                                        <td _ngcontent-ng-c2652969710="">
-                                                            <div _ngcontent-ng-c2652969710=""
-                                                                class="flex flex-row w-full justify-between items-center">
-                                                                <span _ngcontent-ng-c2652969710="">
-                                                                    23BCS01-Multime(IK042) ( LAB ) </span><button
-                                                                    _ngcontent-ng-c2652969710="" type="button"
-                                                                    ptooltip="Download Rekap Presensi"
-                                                                    tooltipposition="top"
-                                                                    class="p-element btn btn-primary btn-sm"><i
-                                                                        _ngcontent-ng-c2652969710=""
-                                                                        class="fas fa-download"></i></button></div>
-                                                        </td>
-                                                    </tr>
-                                                    <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-                                                </tbody><!----><!---->
-                                            </table><!----><!----><!----><!---->
-                                        </div><!----><!----><!----><!----><!---->
-                                    </div>
-                                </p-table><!---->
-                            </div>
-                        </div>
-                    </div>
+            _ngcontent-ng-c1933515739=""></router-outlet><app-login _nghost-ng-c1820812417="">
+            <div _ngcontent-ng-c1820812417="" class="h-screen flex flex-col justify-between">
+                <div _ngcontent-ng-c1820812417=""
+                    class="hidden lg:flex flex-row gap-10 items-center p-5 bg-black/30 shadow-sm"><img
+                        _ngcontent-ng-c1820812417="" alt="" class="h-28" src="assets/amikom.png">
+                    <div _ngcontent-ng-c1820812417="" class="leading-tight text-purple-50"><span
+                            _ngcontent-ng-c1820812417="" class="uppercase text-xl lg:text-5xl font-bold"> universitas
+                            amikom yogyakarta </span><br _ngcontent-ng-c1820812417=""><span _ngcontent-ng-c1820812417=""
+                            class="text-sm lg:text-lg"> Jl. Padjajaran, Ring Road Utara, Kel. Condongcatur, Kec. Depok,
+                            Kab. Sleman, Prop. Daerah Istimewa Yogyakarta </span><br _ngcontent-ng-c1820812417=""><span
+                            _ngcontent-ng-c1820812417="" class="text-sm lg:text-lg"> Telp : +62 274884 201, Website :
+                            www.amikom.ac.id, Email : amikom@amikom.ac.id </span></div>
                 </div>
-                <div _ngcontent-ng-c2652969710=""
-                    class="px-7 py-3 rounded-2xl shadow-sm bg-white flex flex-row justify-between items-end">
-                    <div _ngcontent-ng-c2652969710="" class="flex flex-col">
-                        <p _ngcontent-ng-c2652969710="" class="tracking-wide leading-tight text-sm"><span
-                                _ngcontent-ng-c2652969710="" class="underline">Petunjuk : </span><br
-                                _ngcontent-ng-c2652969710=""> 1. Klik pada nama matakuliah untuk memunculkan daftar
-                            kelas <br _ngcontent-ng-c2652969710=""> 2. Pilih kelas yang akan di ajar <br
-                                _ngcontent-ng-c2652969710=""> 3. Klik tombol konfirmasi untuk melanjutkan ke resume
-                            materi </p>
+                <div _ngcontent-ng-c1820812417="" class="flex-1 flex flex-col justify-center items-center">
+                    <div _ngcontent-ng-c1820812417="" class="flex lg:hidden flex-row justify-center items-center"><img
+                            _ngcontent-ng-c1820812417="" alt="" class="text-center h-36 py-6"
+                            src="assets/images/header-white.png"></div><!---->
+                    <p _ngcontent-ng-c1820812417=""
+                        class="text-2xl lg:text-4xl uppercase mb-2 tracking-wide text-indigo-50 font-semibold text-center">
+                        Presensi Perkuliahan </p>
+                    <div _ngcontent-ng-c1820812417="" class="card bg-base-100 lg:w-96">
+                        <div _ngcontent-ng-c1820812417="" class="card-body">
+                            <div _ngcontent-ng-c1820812417="" class="card-title">Login Dosen </div>
+                            <form _ngcontent-ng-c1820812417="" novalidate=""
+                                class="flex flex-col gap-5 ng-untouched ng-pristine ng-valid">
+                                <div _ngcontent-ng-c1820812417="" class="flex flex-col gap-2">
+                                    <div _ngcontent-ng-c1820812417="">NIK</div><input _ngcontent-ng-c1820812417=""
+                                        type="text" name="user_id" ngmodel=""
+                                        class="input input-bordered ng-untouched ng-pristine ng-valid">
+                                </div>
+                                <div _ngcontent-ng-c1820812417="" class="flex flex-col gap-2">
+                                    <div _ngcontent-ng-c1820812417="">Password</div><input _ngcontent-ng-c1820812417=""
+                                        type="password" name="password" ngmodel=""
+                                        class="input input-bordered ng-untouched ng-pristine ng-valid">
+                                </div><!---->
+                                <div _ngcontent-ng-c1820812417="" class="flex flex-col gap-2"><button
+                                        _ngcontent-ng-c1820812417="" type="submit" class="btn btn-secondary">Login
+                                        presensi Perkuliahan</button></div>
+                            </form>
+                        </div>
                     </div>
+                    <div _ngcontent-ng-c1820812417=""
+                        class="lg:w-80 flex flex-row justify-end text-sm mt-1 text-purple-50">Version 4.5.8 </div>
                 </div>
-                <div _ngcontent-ng-c2652969710="" class="pb-7"><button _ngcontent-ng-c2652969710="" pbutton=""
-                        label="Keluar Aplikasi Presensi" icon="fa-solid fa-arrow-right-from-bracket"
-                        class="p-element p-button-sm p-button p-component"><span
-                            class="p-button-icon p-button-icon-left fa-solid fa-arrow-right-from-bracket"
-                            aria-hidden="true"></span><span class="p-button-label">Keluar Aplikasi
-                            Presensi</span></button></div>
-            </div><p-dialog _ngcontent-ng-c2652969710=""
-                class="p-element ng-tns-c4042076560-0 ng-star-inserted"><!----></p-dialog>
-        </app-matakuliah><!----></app-root>
+            </div><!---->
+        </app-login><!----></app-root>
     <script src="runtime.8da5bb83a44ddc1c.js" type="module"></script>
     <script src="polyfills.4506cc7339ee39b1.js" type="module"></script>
     <script src="main.47abacba515aa2b2.js" type="module"></script>
