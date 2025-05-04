@@ -1,0 +1,291 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #140330;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px 16px;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Profile Card */
+.profile-card {
+    padding: 20px 28px;
+    border-radius: 16px;
+    background: linear-gradient(to bottom right, #f7f5fb, white, #e9e5f5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-icon {
+    font-size: 3rem;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-id {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.125rem;
+}
+
+.profile-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    flex: 1;
+}
+
+/* Search and Download */
+.search-download {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #d9d9d9;
+    border-radius: 16px;
+    font-size: 1rem;
+}
+
+.search-box i {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    color: #666;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.primary-btn {
+    background-color: #673AB7;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #5e35b1;
+    box-shadow: 0 2px 5px rgba(103, 58, 183, 0.3);
+    transform: translateY(-1px);
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+}
+
+.small-btn {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+}
+
+.exit-btn {
+    background-color: #6e7881;
+    color: white;
+    font-size: 0.875rem;
+    gap: 8px;
+}
+
+.exit-btn:hover {
+    background-color: #5d666e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Tables */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.data-table th {
+    font-weight: 600;
+}
+
+.striped-table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.striped-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}
+
+.striped-table tbody tr.selected {
+    background-color: rgba(103, 58, 183, 0.1);
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+/* Class Section */
+.class-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.class-title {
+    font-weight: normal;
+}
+
+.course-name {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.class-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Instructions Section */
+.instructions-card {
+    padding: 16px 28px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.instructions-content p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Exit Button Container */
+.exit-container {
+    padding-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: 3fr 2fr;
+    }
+    
+    .search-download {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .search-box {
+        width: auto;
+        flex: 1;
+        margin-right: 16px;
+    }
+    
+    .content {
+        padding: 28px;
+    }
+}
+
+/* Animation effects */
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Improved hover effect for table rows */
+.striped-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.striped-table tbody tr:hover {
+    background-color: rgba(103, 58, 183, 0.05);
+}
+
+.striped-table tbody tr.selected {
+    border-left: 3px solid #673AB7;
+}

@@ -1,0 +1,266 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #140330; /* Keeping the deep purple background */
+    color: #f8f9fa;
+    min-height: 100vh;
+    line-height: 1.5;
+    background-image: url('../img/bg-pattern.png');
+    background-repeat: repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.university-name {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f8f9fa;
+    margin-bottom: 5px;
+}
+
+.university-address, .university-contact {
+    font-size: 12px;
+    color: #f8f9fa;
+    opacity: 0.9;
+}
+
+/* Mobile Header */
+.mobile-header {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.mobile-logo {
+    height: 80px;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e0e0fc;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Login Card Styles */
+.login-card {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 380px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-logo {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.input-control {
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.input-control:focus {
+    border-color: #673AB7;
+    outline: none;
+    box-shadow: 0 0 0 0.15rem rgba(103, 58, 183, 0.25);
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.form-check-input {
+    margin-top: 0;
+}
+
+.form-check-label {
+    font-size: 14px;
+    color: #333;
+}
+
+.btn-login {
+    background-color: #673AB7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+.btn-login:hover {
+    background-color: #5e35b1;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Version Text */
+.version-container {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.version-text {
+    color: #e0e0fc;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        display: none;
+    }
+    
+    .mobile-header {
+        display: block;
+    }
+    
+    .page-title {
+        font-size: 24px;
+    }
+    
+    .login-card {
+        max-width: 320px;
+    }
+    
+    .card-body {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .university-name {
+        font-size: 20px;
+    }
+    
+    .university-address, .university-contact {
+        font-size: 11px;
+    }
+    
+    .header-logo {
+        height: 50px;
+    }
+}

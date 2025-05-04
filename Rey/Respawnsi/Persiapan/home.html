@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presensi Kuliah - Universitas Amikom Yogyakarta</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <!-- Profile Section -->
+            <div class="profile-card">
+                <div class="profile-info">
+                    <i class="fa-solid fa-user-tie profile-icon"></i>
+                    <div class="profile-details">
+                        <span class="profile-id">190302465</span>
+                        <span class="profile-name">M. Akbar Maulana, M.Kom</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="grid-container">
+                <!-- Course Selection Card -->
+                <div class="card courses-card">
+                    <div class="card-body">
+                        <div class="card-title">Pilih Matakuliah</div>
+                        <div class="search-download">
+                            <div class="search-box">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Cari Matakuliah">
+                            </div>
+                            <button class="btn primary-btn download-btn">
+                                <i class="fas fa-download"></i>Download data mahasiswa
+                            </button>
+                        </div>
+                        <table class="data-table striped-table">
+                            <thead>
+                                <tr>
+                                    <th>NO</th>
+                                    <th>MATAKULIAH</th>
+                                    <th>PRODI</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="selected">
+                                    <td>1</td>
+                                    <td class="truncate">MULTIMEDIA</td>
+                                    <td class="truncate">S1 - Bachelor Communication Science</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="truncate">DIGITAL BUSINESS</td>
+                                    <td class="truncate">S1 - Ilmu Komunikasi</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Class Selection Card -->
+                <div class="card classes-card">
+                    <div class="card-body">
+                        <div class="card-title">Pilih Kelas</div>
+                        <div class="class-header">
+                            <div class="class-title">
+                                Daftar Kelas Matakuliah <br>
+                                <span class="course-name">"MULTIMEDIA"</span>
+                            </div>
+                        </div>
+                        <table class="data-table striped-table">
+                            <thead>
+                                <tr>
+                                    <th>KELAS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="class-row">
+                                            <span>23BCS01-Multime(IK042) ( LAB )</span>
+                                            <button class="btn primary-btn small-btn" title="Download Rekap Presensi">
+                                                <i class="fas fa-download"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructions Box -->
+            <div class="instructions-card">
+                <div class="instructions-content">
+                    <p>
+                        <span class="underline">Petunjuk : </span><br>
+                        1. Klik pada nama matakuliah untuk memunculkan daftar kelas <br>
+                        2. Pilih kelas yang akan di ajar <br>
+                        3. Klik tombol konfirmasi untuk melanjutkan ke resume materi
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exit Button -->
+            <div class="exit-container">
+                <button class="btn exit-btn">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    Keluar Aplikasi Presensi
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
