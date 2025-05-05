@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsi Genap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 100%;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .responsi {
+            color: #2EB086;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        h1 {
+            color: #2B3A4A;
+            font-size: 42px;
+            margin-bottom: 5px;
+        }
+        
+        .date {
+            color: #2EB086;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        h2 {
+            color: #2B3A4A;
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .quote-box {
+            background-color: #2B3A4A;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .content-grid {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 20px;
+            background-color: #2B3A4A;
+            height: 400px;
+
+        }
+        
+        .left-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .green-box {
+            background-color: #2EB086;
+            height: 80px;
+            border-radius: 5px;
+            border: 2px solid #2B3A4A;
+        }
+        
+        .middle-column {
+            flex: 2;
+        }
+        
+        .image-box {
+            background-color: #2EB086;
+            height: 250px;
+            border-radius: 5px;
+            border: 2px solid #2B3A4A;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .image-text {
+            color: #2B3A4A;
+        }
+        
+        .link {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #2B3A4A;
+        }
+        
+        .right-column {
+            flex: 1;
+        }
+        
+        .img-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 5px;
+            height: 100%;
+        }
+        
+        .img-box {
+            background-color: #2EB086;
+            border-radius: 5px;
+            border: 2px solid #2B3A4A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #2B3A4A;
+            font-size: 12px;
+        }
+        
+        .quotes-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 0 5px;
+        }
+        
+        .quote {
+            flex: 1;
+            background-color: #2B3A4A;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .green-text {
+            color: #2EB086;
+        }
+        
+        footer {
+            background-color: #2B3A4A;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footer-small {
+            font-size: 12px;
+            margin-top: 5px;
+            color: #2EB086;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="responsi">RESPONSI No.PC GENAP</p>
+            <h1>Dita Leni Rafiah</h1>
+            <p class="date">25.01.2025</p>
+            <h2>38</h2>
+        </header>
+        
+        <div class="quote-box">
+            <p>Sujud di sepertiga malam gak nyebut "tahajud" tapi nyebutnya "Dialog dini hari".</p>
+        </div>
+        
+        <div class="content-grid">
+            <div class="left-column">
+                <div class="green-box"></div>
+                <div class="green-box"></div>
+                <div class="green-box"></div>
+            </div>
+            
+            <div class="middle-column">
+                <div class="image-box">
+                    <div class="link">link me</div>
+                    <div class="image-text">image</div>
+                </div>
+            </div>
+            
+            <div class="right-column">
+                <div class="img-grid">
+                    <div class="img-box">img</div>
+                    <div class="img-box">img</div>
+                    <div class="img-box">img</div>
+                    <div class="img-box">img</div>
+                    <div class="img-box">img</div>
+                    <div class="img-box">img</div>
+                    <div class="img-box">img</div>
+                    <div class="img-box">img</div>
+                    <div class="img-box">img</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quotes-row">
+            <div class="quote">
+                <p><span class="green-text">Jomblo sengketa : </span>"Dibilang temen tapi deket, dibilang pasangan tapi bukan".</p>
+            </div>
+            <div class="quote">
+                <p>Rindu itu curang hanya mengenal kata "tambah", tidak kenal "kurang".</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Mohon Maaf Kesulitan Yang Kami Buat</p>
+            <p class="footer-small">UE RESPONSI praktikum Pemrograman Web 2023</p>
+        </footer>
+    </div>
+</body>
+</html>
