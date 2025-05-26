@@ -47,8 +47,8 @@
       }
       
       /* Custom cursor styles */
-      body {
-        cursor: none; /* Hide default cursor */
+      body, a, button, input, select, textarea, .btn {
+        cursor: none !important; /* Hide default cursor on all interactive elements */
       }
       
       .custom-cursor {
@@ -308,6 +308,27 @@
         
         // Start cursor animation
         updateCursor();
+        
+        // Add cursor hover effect for interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, input[type="button"], input[type="submit"], .btn, select');
+        
+        interactiveElements.forEach(element => {
+          element.addEventListener('mouseenter', () => {
+            // Enlarge cursor and change appearance on hover
+            cursor.style.width = '30px';
+            cursor.style.height = '30px';
+            cursor.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+            cursor.style.border = '2px solid black';
+          });
+          
+          element.addEventListener('mouseleave', () => {
+            // Return to normal size and appearance
+            cursor.style.width = '20px';
+            cursor.style.height = '20px';
+            cursor.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+            cursor.style.border = 'none';
+          });
+        });
         
         // Snow effect configuration
         const snowflakes = 150; // Number of snowflakes
