@@ -9,44 +9,52 @@
     <link rel="stylesheet" type="text/css" href="bs/css/bootstrap.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">wowow</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Link</a>
-              </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <!-- Logo and Brand on the left -->
+        <a class="navbar-brand" href="#">
+          <img src="bs/logo.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top me-2">
+          My Pages
+        </a>
+        
+        <!-- Toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Menu items on the right -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container-fluid py-5 bg-light">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h1 class="display-4 fw-bold mb-3">Hello, I'm Dania Brigita</h1>
+          <p class="lead mb-4">Welcome to my personal website. I'm a passionate web developer and designer with a focus on creating beautiful and functional websites.</p>
+          <hr class="my-4">
+          <p class="mb-4">I specialize in front-end development, UI/UX design, and creating responsive web applications that deliver exceptional user experiences.</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#about" class="btn btn-primary px-4">About Me</a>
+            <a href="#portfolio" class="btn btn-success px-4">My Work</a>
+            <a href="#contact" class="btn btn-outline-dark px-4">Contact Me</a>
           </div>
         </div>
-      </nav>
-    <div class="container-fluid p-5">
-        <div class="jumbotron">
-            <h1>Bootstrap</h1>
-            <p>belajar framework santai</p>
-            <button type="button" class="btn btn-outline-success">Download</button>
-        </div>
+      </div>
     </div>
+
 </body>
 </html>
