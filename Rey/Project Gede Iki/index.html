@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGANGIN - Platform Magang Digital</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .gradient-purple {
+            background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
+        }
+
+        .gradient-orange {
+            background: linear-gradient(135deg, #F59E0B 0%, #EAB308 100%);
+        }
+
+        .navbar-brand img {
+            height: 30px;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7C3AED;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="assets/images/logo.png">
+                MAGANGIN
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light px-3" href="#login">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-10">
+                    <div class="bg-dark bg-opacity-75 rounded-4 p-4 mb-5">
+                        <h1 class="fw-bold mb-3">
+                            <span class="text-warning">Magangin</span> adalah platform resmi magang untuk
+                            <span class="text-warning">Mahasiswa D3TI AMIKOM</span>.
+                            Dibuat untuk <span class="text-warning">mempermudah</span> proses pencarian,
+                            pengajuan, dan pelacakan status magang <span class="text-warning">secara digital</span>.
+                            Dirancang dengan <span class="text-warning">tampilan</span> yang modern dan user-friendly.
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card rounded-4 p-4 text-center h-100">
+                        <div class="gradient-orange rounded-3 p-3 d-inline-block mb-3">
+                            <i class="bi bi-clock-fill fs-2 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold text-warning mb-3">Cepat & Efisien</h5>
+                        <p class="mb-0">Proses pengajuan magang maksimal 4 hari kerja dengan status secara real time.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card rounded-4 p-4 text-center h-100">
+                        <div class="gradient-orange rounded-3 p-3 d-inline-block mb-3">
+                            <i class="bi bi-geo-alt-fill fs-2 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold text-warning mb-3">Rekomendasi Tepat</h5>
+                        <p class="mb-0">Sistem menyediakan tempat magang sesuai bidang dan minatmu.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card rounded-4 p-4 text-center h-100">
+                        <div class="gradient-orange rounded-3 p-3 d-inline-block mb-3">
+                            <i class="bi bi-bell-fill fs-2 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold text-warning mb-3">Notifikasi Otomatis</h5>
+                        <p class="mb-0">Dapatkan info penting langsung ke email mahasiswa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrated System Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="hero-section rounded-4 p-5 text-white text-center">
+                <h2 class="section-title mb-4">
+                    <i class="bi bi-search text-warning"></i> Temukan dan
+                    <span class="text-warning">Ajukan</span> Magangmu Lebih Mudah<br>
+                    Sistem Terintegrasi untuk <span class="text-warning">Mahasiswa D3TI AMIKOM</span>
+                </h2>
+                <p class="lead">
+                    Dapatkan <span class="text-warning">akses</span> ke tempat magang terpercaya, ajukan hanya
+                    dalam beberapa klik, dan <span class="text-warning">pantau</span> prosesmu langsung dari
+                    dashboard. Semua serba digital, <span class="text-warning">tanpa ribet</span>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="hero-section text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="fw-bold">MAGANGIN</h5>
+                    <p>&copy; 2024 Platform Magang Digital AMIKOM. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
